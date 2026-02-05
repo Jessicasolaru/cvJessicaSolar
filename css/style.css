@@ -1,0 +1,324 @@
+/* ================= VARIABLES DE COLOR ================= */
+:root {
+  --rosa-fondo: #fff6fa;
+  --azul-texto: #1f3c88;
+  --violeta-acento: #cdb4db;
+  --celeste-acento: #bde0fe;
+  --blanco: #ffffff;
+}
+
+/* ================= ESTILOS GENERALES ================= */
+body {
+  background-color: var(--rosa-fondo);
+  color: var(--azul-texto);
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+/* ================= CONTENEDOR PRINCIPAL ================= */
+.cv-container {
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  backdrop-filter: blur(8px);
+}
+
+.navbar-brand {
+  color: var(--azul-texto);
+}
+
+.nav-link {
+  color: var(--azul-texto);
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--violeta-acento);
+}
+
+/* ================= HEADER ================= */
+header {
+  background-color: var(--blanco);
+  border-radius: 20px;
+  padding: 50px 30px;
+  margin-bottom: 50px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  border-top: 6px solid var(--violeta-acento);
+}
+
+
+/* ================= FOTO PERFIL ================= */
+.foto-perfil {
+  width: 180px;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(135deg, var(--violeta-acento), var(--celeste-acento));
+}
+
+/* ================= TÍTULOS ================= */
+h1 {
+  font-weight: 700;
+}
+
+.subtitulo {
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+h3 {
+  position: relative;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+h3::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: var(--violeta-acento);
+  display: block;
+  margin-top: 8px;
+  border-radius: 10px;
+}
+
+/* ================= SECCIONES (CARDS) ================= */
+.seccion {
+  background-color: var(--blanco);
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+
+  /* Animación */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.seccion.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= EXPERIENCIA ================= */
+#experiencia div {
+  border-left: 4px solid var(--celeste-acento);
+  padding-left: 15px;
+  margin-bottom: 25px;
+}
+
+/* ================= HABILIDADES ================= */
+#habilidades .col-6 {
+  background-color: var(--rosa-fondo);
+  border-radius: 30px;
+  padding: 10px 0;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+#habilidades .col-6:hover {
+  background-color: var(--celeste-acento);
+  transform: scale(1.05);
+}
+
+/* =========================
+   HABILIDADES BLANDAS
+========================= */
+
+.soft-skill-card {
+  background-color: var(--rosa-fondo);
+  border-radius: 18px;
+  padding: 26px 22px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.soft-skill-card h5 {
+  color: #2c2f7c; /* azul oscuro */
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.soft-skill-card p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.soft-skill-card:hover {
+  background-color: var(--celeste-acento);
+  transform: scale(1.05);
+}
+
+
+
+/* ================= BOTONES ================= */
+.btn-outline-primary {
+  border-color: var(--azul-texto);
+  color: var(--azul-texto);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--azul-texto);
+  color: white;
+}
+
+/* ================= FORMULARIO ================= */
+input.form-control {
+  border-radius: 30px;
+  padding: 12px 20px;
+}
+
+/* ================= MODO OSCURO ================= */
+.modo-oscuro {
+  background-color: #1e1e2e;
+  color: #f5f5f5;
+}
+
+.modo-oscuro .seccion,
+.modo-oscuro header {
+  background-color: #2a2a40;
+  color: #f5f5f5;
+}
+
+.modo-oscuro h3::after {
+  background-color: var(--celeste-acento);
+}
+
+/* ================= CURSOS / FORMACIÓN COMPLEMENTARIA ================= */
+
+#cursos .curso-item {
+  border-left: 4px solid var(--violeta-acento);
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+#cursos h5 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.curso-institucion {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--azul-texto);
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+/* ================= MODO OSCURO - HABILIDADES ================= */
+
+.modo-oscuro #habilidades .col-6 {
+  background-color: #3a3a55; /* fondo oscuro contrastante */
+  color: #ffffff;            /* texto blanco */
+}
+
+.modo-oscuro #habilidades .col-6:hover {
+  background-color: var(--celeste-acento);
+  color: #1e1e2e;
+}
+
+/* ================= MODO OSCURO - HABILIDADES BLANDAS ================= */
+
+.modo-oscuro .soft-skill-card {
+  background-color: #3a3a55;
+}
+
+.modo-oscuro .soft-skill-card h5,
+.modo-oscuro .soft-skill-card p {
+  color: #ffffff;
+}
+
+.modo-oscuro .soft-skill-card:hover {
+  background-color: var(--celeste-acento);
+  color: #1e1e2e;
+}
+
+
+/* ================= MODO OSCURO - CURSOS / INSTITUCIONES ================= */
+
+.modo-oscuro .curso-institucion {
+  color: #e0e0f0;   /* texto claro y legible */
+  opacity: 1;       /* quitamos opacidad para mejor contraste */
+}
+
+/* ================= REDES SOCIALES ================= */
+
+.redes-sociales {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.red-social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--azul-texto);
+  background-color: var(--rosa-fondo);
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.red-social i {
+  font-size: 1.2rem;
+}
+
+.red-social:hover {
+  background-color: var(--celeste-acento);
+  transform: translateY(-2px);
+}
+
+/* ================= MODO OSCURO - REDES ================= */
+
+.modo-oscuro .red-social {
+  background-color: #3a3a55;
+  color: #ffffff;
+}
+
+.modo-oscuro .red-social:hover {
+  background-color: var(--celeste-acento);
+  color: #1e1e2e;
+}
+
+/* ===============================
+   FIX BOTONES OUTLINE EN MODO OSCURO
+================================ */
+
+.modo-oscuro .btn-outline-primary {
+  background-color: #0d6efd !important;
+  color: #ffffff !important;
+  border-color: #0d6efd !important;
+}
+
+.modo-oscuro .btn-outline-secondary {
+  background-color: #6c757d !important;
+  color: #ffffff !important;
+  border-color: #6c757d !important;
+}
+
+/* ===============================
+   HOVER BOTONES EN MODO OSCURO
+================================ */
+
+.modo-oscuro .btn-outline-primary:hover {
+  background-color: #0b5ed7; /* azul un poco más oscuro */
+  border-color: #0b5ed7;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.modo-oscuro .btn-outline-secondary:hover {
+  background-color: #5c636a; /* gris más oscuro */
+  border-color: #5c636a;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
