@@ -15,4 +15,4 @@ Incluye manipulación del DOM, uso de eventos, estilos responsivos y funcionalid
 - jQuery
 
 ## Enlace al CV
-👉 https://Jessicasolaru.github.io/cvJessicaSolar/
+https://jessicasolaru.github.io/cvJessicaSolar/
