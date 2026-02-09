@@ -11,7 +11,7 @@
 body {
   background-color: var(--rosa-fondo);
   color: var(--azul-texto);
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   line-height: 1.6;
 }
 
@@ -51,13 +51,16 @@ header {
   border-top: 6px solid var(--violeta-acento);
 }
 
-
 /* FOTO PERFIL  */
 .foto-perfil {
   width: 180px;
   border-radius: 50%;
   padding: 5px;
-  background: linear-gradient(135deg, var(--violeta-acento), var(--celeste-acento));
+  background: linear-gradient(
+    135deg,
+    var(--violeta-acento),
+    var(--celeste-acento)
+  );
 }
 
 /* TÍTULOS */
@@ -133,11 +136,13 @@ h3::after {
   border-radius: 18px;
   padding: 26px 22px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .soft-skill-card h5 {
-  color: #2c2f7c; 
+  color: #2c2f7c;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -211,7 +216,7 @@ input.form-control {
 
 .modo-oscuro #habilidades .col-6 {
   background-color: #3a3a55; /* fondo oscuro contrastante */
-  color: #ffffff;            /* texto blanco */
+  color: #ffffff; /* texto blanco */
 }
 
 .modo-oscuro #habilidades .col-6:hover {
@@ -235,12 +240,11 @@ input.form-control {
   color: #1e1e2e;
 }
 
-
 /*  MODO OSCURO - CURSOS / INSTITUCIONES */
 
 .modo-oscuro .curso-institucion {
-  color: #e0e0f0;   /* texto claro y legible */
-  opacity: 1;       /* quitamos opacidad para mejor contraste */
+  color: #e0e0f0; /* texto claro y legible */
+  opacity: 1; /* quitamos opacidad para mejor contraste */
 }
 
 /*  REDES SOCIALES */
@@ -302,14 +306,14 @@ input.form-control {
 /* HOVER BOTONES EN MODO OSCURO */
 
 .modo-oscuro .btn-outline-primary:hover {
-  background-color: #0b5ed7; 
+  background-color: #0b5ed7;
   border-color: #0b5ed7;
   color: #ffffff;
   transform: translateY(-2px);
 }
 
 .modo-oscuro .btn-outline-secondary:hover {
-  background-color: #5c636a; 
+  background-color: #5c636a;
   border-color: #5c636a;
   color: #ffffff;
   transform: translateY(-2px);

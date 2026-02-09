@@ -1,18 +1,16 @@
 $(document).ready(function () {
-
   // Cambio de tema
   $("#btn-tema").click(function () {
-  // Alterna la clase modo-oscuro en el body
-  $("body").toggleClass("modo-oscuro");
+    // Alterna la clase modo-oscuro en el body
+    $("body").toggleClass("modo-oscuro");
 
-  // Cambia el texto del botón según el modo
-  if ($("body").hasClass("modo-oscuro")) {
-    $(this).text("Cambiar modo claro ☀️");
-  } else {
-    $(this).text("Cambiar modo oscuro 🌙");
-  }
-});
-
+    // Cambia el texto del botón según el modo
+    if ($("body").hasClass("modo-oscuro")) {
+      $(this).text("Cambiar modo claro ☀️");
+    } else {
+      $(this).text("Cambiar modo oscuro 🌙");
+    }
+  });
 
   // Validación email
   $("#email").on("input", function () {
@@ -34,5 +32,4 @@ $(document).ready(function () {
       }
     });
   });
-
 });
