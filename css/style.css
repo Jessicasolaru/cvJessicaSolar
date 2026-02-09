@@ -1,4 +1,4 @@
-/* ================= VARIABLES DE COLOR ================= */
+/*  VARIABLES DE COLOR  */
 :root {
   --rosa-fondo: #fff6fa;
   --azul-texto: #1f3c88;
@@ -7,7 +7,7 @@
   --blanco: #ffffff;
 }
 
-/* ================= ESTILOS GENERALES ================= */
+/*  ESTILOS GENERALES */
 body {
   background-color: var(--rosa-fondo);
   color: var(--azul-texto);
@@ -15,7 +15,7 @@ body {
   line-height: 1.6;
 }
 
-/* ================= CONTENEDOR PRINCIPAL ================= */
+/* CONTENEDOR PRINCIPAL  */
 .cv-container {
   max-width: 1000px;
   margin: auto;
@@ -23,7 +23,7 @@ body {
   padding-bottom: 60px;
 }
 
-/* ================= NAVBAR ================= */
+/*  NAVBAR */
 .navbar {
   backdrop-filter: blur(8px);
 }
@@ -41,7 +41,7 @@ body {
   color: var(--violeta-acento);
 }
 
-/* ================= HEADER ================= */
+/*  HEADER */
 header {
   background-color: var(--blanco);
   border-radius: 20px;
@@ -52,7 +52,7 @@ header {
 }
 
 
-/* ================= FOTO PERFIL ================= */
+/* FOTO PERFIL  */
 .foto-perfil {
   width: 180px;
   border-radius: 50%;
@@ -60,7 +60,7 @@ header {
   background: linear-gradient(135deg, var(--violeta-acento), var(--celeste-acento));
 }
 
-/* ================= TÍTULOS ================= */
+/* TÍTULOS */
 h1 {
   font-weight: 700;
 }
@@ -86,7 +86,7 @@ h3::after {
   border-radius: 10px;
 }
 
-/* ================= SECCIONES (CARDS) ================= */
+/*  SECCIONES (CARDS) */
 .seccion {
   background-color: var(--blanco);
   padding: 40px;
@@ -105,14 +105,14 @@ h3::after {
   transform: translateY(0);
 }
 
-/* ================= EXPERIENCIA ================= */
+/* EXPERIENCIA  */
 #experiencia div {
   border-left: 4px solid var(--celeste-acento);
   padding-left: 15px;
   margin-bottom: 25px;
 }
 
-/* ================= HABILIDADES ================= */
+/*  HABILIDADES  */
 #habilidades .col-6 {
   background-color: var(--rosa-fondo);
   border-radius: 30px;
@@ -126,9 +126,7 @@ h3::after {
   transform: scale(1.05);
 }
 
-/* =========================
-   HABILIDADES BLANDAS
-========================= */
+/* HABILIDADES BLANDAS */
 
 .soft-skill-card {
   background-color: var(--rosa-fondo);
@@ -139,7 +137,7 @@ h3::after {
 }
 
 .soft-skill-card h5 {
-  color: #2c2f7c; /* azul oscuro */
+  color: #2c2f7c; 
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -155,9 +153,7 @@ h3::after {
   transform: scale(1.05);
 }
 
-
-
-/* ================= BOTONES ================= */
+/*  BOTONES  */
 .btn-outline-primary {
   border-color: var(--azul-texto);
   color: var(--azul-texto);
@@ -168,13 +164,13 @@ h3::after {
   color: white;
 }
 
-/* ================= FORMULARIO ================= */
+/* FORMULARIO */
 input.form-control {
   border-radius: 30px;
   padding: 12px 20px;
 }
 
-/* ================= MODO OSCURO ================= */
+/*  MODO OSCURO */
 .modo-oscuro {
   background-color: #1e1e2e;
   color: #f5f5f5;
@@ -190,7 +186,7 @@ input.form-control {
   background-color: var(--celeste-acento);
 }
 
-/* ================= CURSOS / FORMACIÓN COMPLEMENTARIA ================= */
+/* CURSOS / FORMACIÓN COMPLEMENTARIA  */
 
 #cursos .curso-item {
   border-left: 4px solid var(--violeta-acento);
@@ -211,7 +207,7 @@ input.form-control {
   margin-bottom: 10px;
 }
 
-/* ================= MODO OSCURO - HABILIDADES ================= */
+/*  MODO OSCURO - HABILIDADES  */
 
 .modo-oscuro #habilidades .col-6 {
   background-color: #3a3a55; /* fondo oscuro contrastante */
@@ -223,7 +219,7 @@ input.form-control {
   color: #1e1e2e;
 }
 
-/* ================= MODO OSCURO - HABILIDADES BLANDAS ================= */
+/*  MODO OSCURO - HABILIDADES BLANDAS  */
 
 .modo-oscuro .soft-skill-card {
   background-color: #3a3a55;
@@ -240,14 +236,14 @@ input.form-control {
 }
 
 
-/* ================= MODO OSCURO - CURSOS / INSTITUCIONES ================= */
+/*  MODO OSCURO - CURSOS / INSTITUCIONES */
 
 .modo-oscuro .curso-institucion {
   color: #e0e0f0;   /* texto claro y legible */
   opacity: 1;       /* quitamos opacidad para mejor contraste */
 }
 
-/* ================= REDES SOCIALES ================= */
+/*  REDES SOCIALES */
 
 .redes-sociales {
   display: flex;
@@ -277,7 +273,7 @@ input.form-control {
   transform: translateY(-2px);
 }
 
-/* ================= MODO OSCURO - REDES ================= */
+/* MODO OSCURO - REDES */
 
 .modo-oscuro .red-social {
   background-color: #3a3a55;
@@ -289,9 +285,7 @@ input.form-control {
   color: #1e1e2e;
 }
 
-/* ===============================
-   FIX BOTONES OUTLINE EN MODO OSCURO
-================================ */
+/* FIX BOTONES OUTLINE EN MODO OSCURO */
 
 .modo-oscuro .btn-outline-primary {
   background-color: #0d6efd !important;
@@ -305,19 +299,17 @@ input.form-control {
   border-color: #6c757d !important;
 }
 
-/* ===============================
-   HOVER BOTONES EN MODO OSCURO
-================================ */
+/* HOVER BOTONES EN MODO OSCURO */
 
 .modo-oscuro .btn-outline-primary:hover {
-  background-color: #0b5ed7; /* azul un poco más oscuro */
+  background-color: #0b5ed7; 
   border-color: #0b5ed7;
   color: #ffffff;
   transform: translateY(-2px);
 }
 
 .modo-oscuro .btn-outline-secondary:hover {
-  background-color: #5c636a; /* gris más oscuro */
+  background-color: #5c636a; 
   border-color: #5c636a;
   color: #ffffff;
   transform: translateY(-2px);
